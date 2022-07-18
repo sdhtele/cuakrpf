@@ -46,14 +46,14 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Report Group", "https://t.me/Mltb_chat_unofficial")
-    buttons.buildbutton("Repo", "https://github.com/Dawn-India/Z-Mirror")
-    buttons.buildbutton("Mirror Group", "https://t.me/z_mirror")
-    buttons.buildbutton("Owner", "https://t.me/dawn_in")
+    buttons.buildbutton("Donate", "https://t.me/jwhoo_le")
+    buttons.buildbutton("Repo", "https://github.com")
+    buttons.buildbutton("Group", "https://t.me/sxrips")
+    buttons.buildbutton("Owner", "https://t.me/jwhoo_le")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Welcome | Z Mirror service is ready for you
+Welcome | SX Mirror service is ready for you
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
@@ -154,7 +154,7 @@ help_string_telegraph = f'''<br>
 '''
 
 help = telegraph.create_page(
-        title='Z-Mirror-Bot Help',
+        title='SX-Mirror-Bot Help',
         content=help_string_telegraph,
     )["path"]
 
