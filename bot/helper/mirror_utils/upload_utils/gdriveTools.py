@@ -160,7 +160,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded by Z-Mirror-Bot',
+            'description': 'Uploaded by SX-Mirror-Bot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -667,7 +667,7 @@ class GoogleDriveHelper:
 
         path = [
             telegraph.create_page(
-                title='Z-Mirror-Bot Drive Search', content=content
+                title='SX-Mirror-Bot Drive Search', content=content
             )["path"]
             for content in telegraph_content
         ]
