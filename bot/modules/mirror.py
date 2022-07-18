@@ -212,7 +212,7 @@ class MirrorListener:
                 msg += f'\n<b>Corrupted Files: </b>{typ}'
             msg += f'\n\n<b>Hey </b>{self.tag} <b>Your Job is Done</b>'
             msg += f'\n<b>It Tooks:</b> {get_readable_time(time() - self.message.date.timestamp())}'
-              msg += f'\n\n<b>Thanks For using SX Bots</b>'
+            msg += f'\n\n<b>Thanks For using SX Bots</b>'
             if not files:
                 sendMessage(msg, self.bot, self.message)
             else:
